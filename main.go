@@ -30,7 +30,7 @@ func main() {
 
 	col := color.RGBA{0, 0, 0, 255}
 	point := fixed.Point26_6{
-		X: fixed.Int26_6(200 * 64),
+		X: fixed.Int26_6(50 * 64),
 		Y: fixed.Int26_6(150 * 64),
 	}
 
@@ -40,7 +40,7 @@ func main() {
 		Face: basicfont.Face7x13,
 		Dot:  point,
 	}
-	d.DrawString("僕は西川和希です")
+	d.DrawString("Hello My name is konojunya.")
 
 	file, _ := os.Create("output.jpg")
 	defer file.Close()
